@@ -398,23 +398,7 @@ print(df)
 
 ---
 
-# 6. ลำดับการสอนในคลิป
-
-แนะนำลำดับการอัดคลิป:
-
-1. เปิดด้วยปัญหา: ข้อมูลจริงมักเป็นตาราง
-2. อธิบายว่าทำไม Python List ยังไม่พอ
-3. แนะนำ Series
-4. สร้าง Series จาก List และ Dictionary
-5. แนะนำ DataFrame
-6. สร้าง DataFrame จาก Dictionary และ List of Dictionaries
-7. อธิบาย Index
-8. ทำ Mini Lab ด้วยข้อมูล Sensor
-9. สรุปและปูทางไป EP2
-
----
-
-# 7. การบ้าน
+# 6. การบ้าน
 
 ลองสร้าง DataFrame ที่มีคอลัมน์ดังนี้:
 
@@ -434,7 +418,7 @@ print(df)
 
 ---
 
-# 8. ตอนถัดไป
+# 7. ตอนถัดไป
 
 EP2 จะเรียนเรื่อง **Data Indexing and Selection**
 
