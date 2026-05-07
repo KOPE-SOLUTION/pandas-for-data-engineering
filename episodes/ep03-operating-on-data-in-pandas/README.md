@@ -102,6 +102,8 @@ print(df)
 
 # 5. Index Alignment ใน Series
 
+> Pandas พยายาม “จับคู่ข้อมูลตามชื่อ Index” ก่อนคำนวณ
+
 ```python
 A = pd.Series(
     [10, 20, 30],
@@ -160,6 +162,16 @@ print(df)
 ---
 
 ## ลบด้วย Row แรก
+
+<details>
+<summary>💡 Check data Type!</summary>
+
+```py
+type(df)
+type(df.iloc[0])
+```
+
+</details>
 
 ```python
 print(df - df.iloc[0])
