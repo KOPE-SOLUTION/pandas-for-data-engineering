@@ -43,7 +43,7 @@ Repository นี้ถูกออกแบบมาเป็น ชุดก�
 |  EP1 | [แนะนำโครงสร้างข้อมูลใน Pandas](episodes/ep01-introducing-pandas-objects/README.md)  | [`episodes/ep01-introducing-pandas-objects`](episodes/ep01-introducing-pandas-objects/README.md)         | Series, DataFrame, Index และแนวคิดของข้อมูลแบบมี Label |
 |  EP2 | [การเลือกและเข้าถึงข้อมูล](episodes/ep02-data-indexing-and-selection/README.md)       | [`episodes/ep02-data-indexing-and-selection`](episodes/ep02-data-indexing-and-selection/README.md)        | เลือกข้อมูลด้วย label, index, เงื่อนไข และ mask        |
 |  EP3 | [การคำนวณและการทำงานกับข้อมูล](episodes/ep03-operating-on-data-in-pandas/README.md)   | [`episodes/ep03-operating-on-data-in-pandas`](episodes/ep03-operating-on-data-in-pandas/README.md)        | การคำนวณ, alignment, broadcasting                      |
-|  EP4 | การจัดการข้อมูลที่หายไป        | `episodes/ep04-handling-missing-data`              | ตรวจจับ, ลบ, เติมค่า missing                           |
+|  EP4 | [การจัดการข้อมูลที่หายไป](episodes/ep04-handling-missing-data/README.md)        | [`episodes/ep04-handling-missing-data`](episodes/ep04-handling-missing-data/README.md)              | ตรวจจับ, ลบ, เติมค่า missing                           |
 |  EP5 | Hierarchical Indexing          | `episodes/ep05-hierarchical-indexing`              | MultiIndex สำหรับข้อมูลหลายระดับ เช่น site/device/time |
 |  EP6 | การรวมข้อมูล (Concat / Append) | `episodes/ep06-combining-datasets-concat-append`   | รวมข้อมูลจากหลายไฟล์หรือหลายวัน                        |
 |  EP7 | การเชื่อมข้อมูล (Merge / Join) | `episodes/ep07-combining-datasets-merge-join`      | เชื่อมข้อมูล sensor กับ metadata                       |
