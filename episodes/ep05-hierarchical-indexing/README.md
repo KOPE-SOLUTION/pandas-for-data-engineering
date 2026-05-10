@@ -313,6 +313,38 @@ df_time_multi = df_time_multi.sort_index()
 print(df_time_multi)
 ```
 
+<br>
+
+<details>
+<summary>💡</summary>
+
+```py
+import pandas as pd
+
+data = {
+    "temperature_c": [29.7, 28.5, 30.3, 27.8]
+}
+
+index = pd.MultiIndex.from_tuples([
+    ("site_b", "sensor_02", "09:00"),
+    ("site_a", "sensor_01", "08:00"),
+    ("site_b", "sensor_01", "09:00"),
+    ("site_a", "sensor_02", "08:00")
+])
+
+df = pd.DataFrame(data, index=index)
+
+print(df)
+
+
+df = df.sort_index()
+
+print(df)
+```
+
+</details>
+
+
 ---
 
 # 18. Group และ Aggregation กับ MultiIndex
