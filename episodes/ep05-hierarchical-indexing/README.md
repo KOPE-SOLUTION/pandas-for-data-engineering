@@ -461,22 +461,7 @@ print(
 
 ---
 
-# 22. ลำดับการสอนแนะนำ
-
-1. อธิบายปัญหาของข้อมูลหลายระดับ
-2. ยกตัวอย่าง site / device / timestamp
-3. สร้าง DataFrame ปกติ
-4. ใช้ set_index()
-5. เลือกข้อมูลด้วย loc
-6. ใช้ reset_index()
-7. สร้าง MultiIndex 3 ระดับ
-8. ทดลอง stack() / unstack()
-9. ทำ Mini Lab
-10. สรุปว่าทำไม MultiIndex สำคัญกับ Data Engineering
-
----
-
-# 23. การบ้าน
+# 22. การบ้าน
 
 สร้าง DataFrame ที่มี Column:
 
@@ -496,7 +481,7 @@ print(
 
 ---
 
-# 24. ตอนถัดไป
+# 23. ตอนถัดไป
 
 EP6 — Combining Datasets: Concat and Append
 
