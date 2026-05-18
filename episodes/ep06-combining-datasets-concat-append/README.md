@@ -640,24 +640,7 @@ print(site_logs)
 
 ---
 
-# 16. ลำดับการสอนแนะนำ
-
-1. อธิบายว่าทำไมข้อมูลจริงมาจากหลายไฟล์
-2. รวมข้อมูลหลายวันด้วย `concat()`
-3. อธิบาย `axis=0`
-4. อธิบาย `ignore_index=True`
-5. รวมข้อมูลแนวนอนด้วย `axis=1`
-6. อธิบายข้อควรระวังของ `axis=1`
-7. อธิบาย `outer join`
-8. อธิบาย `inner join`
-9. สอน `keys=`
-10. สอน `verify_integrity=True` ด้วย Device Registry
-11. อธิบายว่า `append()` ถูกลบแล้ว
-12. ทำ Mini Lab
-
----
-
-# 17. การบ้าน
+# 16. การบ้าน
 
 สร้างข้อมูล 3 วัน:
 
@@ -681,7 +664,7 @@ print(site_logs)
 
 ---
 
-# 18. ตอนถัดไป
+# 17. ตอนถัดไป
 
 EP7 — Combining Datasets: Merge and Join
 
