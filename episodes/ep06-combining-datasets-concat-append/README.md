@@ -189,10 +189,61 @@ print(result)
 
 ---
 
-# 11. append()
+# 11. append() (Deprecated)
 
-```python
-result = df1.append(df2)
+ใน Pandas รุ่นเก่า เราสามารถใช้:
+```py
+df1.append(df2)
+```
+
+เพื่อรวม DataFrame ได้
+
+<br>
+
+แต่ใน Pandas รุ่นใหม่:
+
+```py
+append() ถูกลบออกแล้ว
+```
+
+<br>
+
+และ Pandas แนะนำให้ใช้:
+
+```py
+pd.concat()
+```
+
+แทนทั้งหมด
+
+## วิธีที่ถูกต้องในปัจจุบัน
+
+```py
+result = pd.concat([df1, df2])
+
+print(result)
+```
+
+## ทำไม append() ถูกลบ
+
+เพราะภายใน append() เรียก concat() อยู่แล้ว และทำให้หลายคนเข้าใจผิดว่าเหมือน list.append()
+
+แต่จริง ๆ แล้ว:
+
+```sh
+append() ไม่ได้แก้ DataFrame เดิม
+แต่สร้าง DataFrame ใหม่
+```
+
+ดังนั้น Pandas จึงรวมแนวทางให้เหลือ concat() เป็นหลัก
+
+# ถ้าต้องการ reset index
+
+```py
+result = pd.concat(
+    [df1, df2],
+    ignore_index=True
+)
 
 print(result)
 ```
@@ -231,7 +282,8 @@ print(sensor_logs)
 5. outer join
 6. inner join
 7. keys
-8. append()
+8. verify_integrity
+9. append() ถูก deprecated และควรใช้ concat() แทน
 
 ---
 
