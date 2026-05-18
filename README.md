@@ -45,7 +45,7 @@ Repository นี้ถูกออกแบบมาเป็น ชุดก�
 |  EP3 | [การคำนวณและการทำงานกับข้อมูล](episodes/ep03-operating-on-data-in-pandas/README.md)   | [`episodes/ep03-operating-on-data-in-pandas`](episodes/ep03-operating-on-data-in-pandas/README.md)        | การคำนวณ, alignment, broadcasting                      |
 |  EP4 | [การจัดการข้อมูลที่หายไป](episodes/ep04-handling-missing-data/README.md)        | [`episodes/ep04-handling-missing-data`](episodes/ep04-handling-missing-data/README.md)              | ตรวจจับ, ลบ, เติมค่า missing                           |
 |  EP5 | [Hierarchical Indexing](episodes/ep05-hierarchical-indexing/README.md)          | [`episodes/ep05-hierarchical-indexing`](episodes/ep05-hierarchical-indexing/README.md)              | MultiIndex สำหรับข้อมูลหลายระดับ เช่น site/device/time |
-|  EP6 | การรวมข้อมูล (Concat / Append) | `episodes/ep06-combining-datasets-concat-append`   | รวมข้อมูลจากหลายไฟล์หรือหลายวัน                        |
+|  EP6 | [การรวมข้อมูล (Concat / Append)](episodes/ep06-combining-datasets-concat-append/README.md) | [`episodes/ep06-combining-datasets-concat-append`](episodes/ep06-combining-datasets-concat-append/README.md)   | รวมข้อมูลจากหลายไฟล์หรือหลายวัน                        |
 |  EP7 | การเชื่อมข้อมูล (Merge / Join) | `episodes/ep07-combining-datasets-merge-join`      | เชื่อมข้อมูล sensor กับ metadata                       |
 |  EP8 | การจัดกลุ่มและสรุปผล           | `episodes/ep08-aggregation-and-grouping`           | GroupBy และสถิติ                                       |
 |  EP9 | Pivot Table                    | `episodes/ep09-pivot-tables`                       | การ reshape ข้อมูลเพื่อทำรายงาน                        |
