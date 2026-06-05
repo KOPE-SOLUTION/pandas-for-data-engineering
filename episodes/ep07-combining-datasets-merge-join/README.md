@@ -86,11 +86,7 @@ print(sensor_info)
 ## 4. Merge เบื้องต้น
 
 ```py
-result = pd.merge(
-    sensor_data,
-    sensor_info,
-    on="device_id"
-)
+result = pd.merge(sensor_data, sensor_info, on="device_id")
 
 print(result)
 ```
@@ -154,11 +150,7 @@ device_status = pd.DataFrame({
     ]
 })
 
-pd.merge(
-    sensor_info,
-    device_status,
-    on="device_id"
-)
+pd.merge(sensor_info, device_status, on="device_id")
 ```
 
 <br>
@@ -185,11 +177,7 @@ site_info = pd.DataFrame({
 ```
 
 ```py
-result = pd.merge(
-    sensor_info,
-    site_info,
-    on="site"
-)
+result = pd.merge(sensor_info, site_info, on="site")
 
 print(result)
 ```
@@ -220,11 +208,7 @@ sensor_type = pd.DataFrame({
 ```
 
 ```py
-pd.merge(
-    sensor_info,
-    sensor_type,
-    on="site"
-)
+pd.merge(sensor_info, sensor_type, on="site")
 ```
 
 <br>
@@ -238,11 +222,7 @@ pd.merge(
 กำหนด Key ที่ใช้เชื่อม
 
 ```py
-pd.merge(
-    sensor_data,
-    sensor_info,
-    on="device_id"
-)
+pd.merge(sensor_data, sensor_info, on="device_id")
 ```
 
 ---
@@ -272,12 +252,7 @@ asset_data = pd.DataFrame({
 ```
 
 ```py
-pd.merge(
-    sensor_data,
-    asset_data,
-    left_on="device_id",
-    right_on="asset_id"
-)
+pd.merge(sensor_data, asset_data, left_on="device_id", right_on="asset_id")
 ```
 
 ---
@@ -287,13 +262,7 @@ pd.merge(
 เอาเฉพาะข้อมูลที่ Match กัน
 
 ```py
-pd.merge(
-    sensor_data,
-    asset_data,
-    left_on="device_id",
-    right_on="asset_id",
-    how="inner"
-)
+pd.merge(sensor_data, asset_data, left_on="device_id", right_on="asset_id", how="inner")
 ```
 
 ภาพจำ `A ∩ B`
@@ -305,13 +274,7 @@ pd.merge(
 เก็บข้อมูลฝั่งซ้ายทั้งหมด
 
 ```py
-pd.merge(
-    sensor_data,
-    asset_data,
-    left_on="device_id",
-    right_on="asset_id",
-    how="left"
-)
+pd.merge(sensor_data, asset_data, left_on="device_id", right_on="asset_id", how="left")
 ```
 
 ภาพจำ `เอาฝั่งซ้ายทั้งหมด`
@@ -323,13 +286,7 @@ pd.merge(
 เก็บข้อมูลฝั่งขวาทั้งหมด
 
 ```py
-pd.merge(
-    sensor_data,
-    asset_data,
-    left_on="device_id",
-    right_on="asset_id",
-    how="right"
-)
+pd.merge(sensor_data, asset_data, left_on="device_id", right_on="asset_id", how="right")
 ```
 
 ภาพจำ `เอาฝั่งขวาทั้งหมด`
@@ -341,13 +298,7 @@ pd.merge(
 เก็บทุก Record
 
 ```py
-pd.merge(
-    sensor_data,
-    asset_data,
-    left_on="device_id",
-    right_on="asset_id",
-    how="outer"
-)
+pd.merge(sensor_data, asset_data, left_on="device_id", right_on="asset_id", how="outer")
 ```
 
 ภาพจำ `A ∪ B`
@@ -357,22 +308,13 @@ pd.merge(
 ## 15. Join ด้วย Index
 
 ```py
-sensor_data = sensor_data.set_index(
-    "device_id"
-)
+sensor_data = sensor_data.set_index("device_id")
 
-sensor_info = sensor_info.set_index(
-    "device_id"
-)
+sensor_info = sensor_info.set_index("device_id")
 ```
 
 ```py
-pd.merge(
-    sensor_data,
-    sensor_info,
-    left_index=True,
-    right_index=True
-)
+pd.merge(sensor_data, sensor_info, left_index=True, right_index=True)
 ```
 
 ---
@@ -382,9 +324,7 @@ pd.merge(
 เขียนสั้นกว่า
 
 ```py
-sensor_data.join(
-    sensor_info
-)
+sensor_data.join(sensor_info)
 ```
 
 ---
@@ -394,15 +334,7 @@ sensor_data.join(
 กรณีชื่อ Column ซ้ำ
 
 ```py
-pd.merge(
-    left_df,
-    right_df,
-    on="device_id",
-    suffixes=(
-        "_old",
-        "_new"
-    )
-)
+pd.merge(left_df, right_df, on="device_id", suffixes=("_old", "_new"))
 ```
 
 ---
@@ -450,11 +382,7 @@ devices = pd.DataFrame({
 Merge
 
 ```py
-result = pd.merge(
-    telemetry,
-    devices,
-    on="device_id"
-)
+result = pd.merge(telemetry, devices, on="device_id")
 
 print(result)
 ```
