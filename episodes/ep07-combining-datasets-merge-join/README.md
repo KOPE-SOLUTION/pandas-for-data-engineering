@@ -47,17 +47,6 @@ sensor_data = pd.DataFrame({
 print(sensor_data)
 ```
 
-<br>
-
-ผลลัพธ์
-
-```sh
-   device_id  temperature_c
-0  sensor_01           28.5
-1  sensor_02           29.1
-2  sensor_03           30.2
-```
-
 ---
 
 ## 3. Metadata
@@ -89,17 +78,6 @@ print(sensor_info)
 result = pd.merge(sensor_data, sensor_info, on="device_id")
 
 print(result)
-```
-
-<br>
-
-ผลลัพธ์
-
-```sh
-   device_id  temperature_c    site
-0  sensor_01           28.5  Site_A
-1  sensor_02           29.1  Site_A
-2  sensor_03           30.2  Site_B
 ```
 
 ---
@@ -326,6 +304,63 @@ pd.merge(sensor_data, sensor_info, left_index=True, right_index=True)
 ```py
 sensor_data.join(sensor_info)
 ```
+
+
+<details>
+<summary>ทำไม Pandas ต้องมี join()</summary>
+
+เพราะงานจริงทำบ่อยมาก
+
+เช่น
+
+Telemetry
+
+```text
+device_id
+meter_01
+meter_02
+meter_03
+```
+
+Asset Master
+
+```text
+device_id
+meter_01
+meter_02
+meter_03
+```
+
+เวลาอ่านจาก Database
+
+หลายคนจะตั้ง `df.set_index("device_id")` ตั้งแต่แรก จากนั้น `telemetry.join(asset_master)` จะเขียนสั้นกว่า
+
+```py
+pd.merge(
+    telemetry,
+    asset_master,
+    left_index=True,
+    right_index=True
+)
+```
+
+เยอะเลย
+
+
+</details>
+
+<details>
+<summary>แล้วใช้ join() หรือ merge() ดี?</summary>
+
+| สถานการณ์                                | ใช้       |
+| ---------------------------------------- | --------- |
+| Join ด้วย Index                          | `join()`  |
+| Join ด้วย Column                         | `merge()` |
+| Column คนละชื่อ                          | `merge()` |
+| ต้องใช้ left_on/right_on                 | `merge()` |
+| ต้องการควบคุม how=left/right/inner/outer | `merge()` |
+
+</details>
 
 ---
 
