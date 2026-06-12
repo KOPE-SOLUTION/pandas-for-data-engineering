@@ -213,7 +213,8 @@ pd.merge(sensor_data, sensor_info, on="device_id")
 sensor_data = pd.DataFrame({
     "device_id": [
         "sensor_01",
-        "sensor_02"
+        "sensor_02",
+        "sensor_03"
     ]
 })
 
@@ -274,6 +275,23 @@ pd.merge(sensor_data, asset_data, left_on="device_id", right_on="asset_id", how=
 ## 14. Outer Join
 
 เก็บทุก Record
+
+```py
+asset_data = pd.DataFrame({
+    "asset_id": [
+        "sensor_01",
+        "sensor_02",
+        "sensor_04"
+    ],
+    "owner": [
+        "ฝ่ายผลิต",
+        "ฝ่ายซ่อมบำรุง",
+        "ฝ่ายวิจัย"
+    ]
+})
+```
+
+<br>
 
 ```py
 pd.merge(sensor_data, asset_data, left_on="device_id", right_on="asset_id", how="outer")
