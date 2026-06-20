@@ -70,8 +70,29 @@ print(t)
 
 ข้อมูลจาก CSV หรือ Database มักเป็น string ก่อน ต้องแปลงเป็น datetime
 
+```py
+import pandas as pd
+
+df = pd.DataFrame({
+    "timestamp": [
+        "2026-01-01 08:00:00",
+        "2026-01-01 08:05:00",
+        "2026-01-01 08:15:00"
+    ],
+    "temperature_c": [
+        2.5,
+        2.7,
+        2.6
+    ]
+})
+
+print(df)
+```
+
 ```python
 df["timestamp"] = pd.to_datetime(df["timestamp"])
+
+print(df.dtypes)
 ```
 
 ---
@@ -80,6 +101,8 @@ df["timestamp"] = pd.to_datetime(df["timestamp"])
 
 ```python
 df = df.set_index("timestamp")
+
+print(df)
 ```
 
 เมื่อ timestamp เป็น index แล้ว เราจะใช้ความสามารถด้าน Time Series ของ Pandas ได้ง่ายขึ้น
