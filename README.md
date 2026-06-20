@@ -50,7 +50,7 @@ Repository นี้ถูกออกแบบมาเป็น ชุดก�
 |  EP8 | [การจัดกลุ่มและสรุปผล](episodes/ep08-aggregation-and-grouping/README.md)           | [`episodes/ep08-aggregation-and-grouping`](episodes/ep08-aggregation-and-grouping/README.md)           | GroupBy และสถิติ                                       |
 |  EP9 | [Pivot Table](episodes/ep09-pivot-tables/README.md)                    | [`episodes/ep09-pivot-tables`](episodes/ep09-pivot-tables/README.md)                       | การ reshape ข้อมูลเพื่อทำรายงาน                        |
 | EP10 | [การจัดการข้อความ](episodes/ep10-vectorized-string-operations/README.md)               | [`episodes/ep10-vectorized-string-operations`](episodes/ep10-vectorized-string-operations/README.md)       | ทำความสะอาด text เช่น device ID                        |
-| EP11 | Time Series                    | `episodes/ep11-working-with-time-series`           | DateTime, resampling, rolling                          |
+| EP11 | [Time Series](episodes/ep11-working-with-time-series/README.md)                    | [`episodes/ep11-working-with-time-series`](episodes/ep11-working-with-time-series/README.md)           | DateTime, resampling, rolling                          |
 | EP12 | เพิ่มประสิทธิภาพ Pandas        | `episodes/ep12-high-performance-pandas-eval-query` | eval(), query()                                        |
 | EP13 | แหล่งเรียนรู้เพิ่มเติม         | `episodes/ep13-further-resources`                  | หนังสือและแนวทางต่อยอด                                 |
 
