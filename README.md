@@ -48,7 +48,7 @@ Repository นี้ถูกออกแบบมาเป็น ชุดก�
 |  EP6 | [การรวมข้อมูล (Concat / Append)](episodes/ep06-combining-datasets-concat-append/README.md) | [`episodes/ep06-combining-datasets-concat-append`](episodes/ep06-combining-datasets-concat-append/README.md)   | รวมข้อมูลจากหลายไฟล์หรือหลายวัน                        |
 |  EP7 | [การเชื่อมข้อมูล (Merge / Join)](episodes/ep07-combining-datasets-merge-join/README.md) | [`episodes/ep07-combining-datasets-merge-join`](episodes/ep07-combining-datasets-merge-join/README.md)      | เชื่อมข้อมูล sensor กับ metadata                       |
 |  EP8 | [การจัดกลุ่มและสรุปผล](episodes/ep08-aggregation-and-grouping/README.md)           | [`episodes/ep08-aggregation-and-grouping`](episodes/ep08-aggregation-and-grouping/README.md)           | GroupBy และสถิติ                                       |
-|  EP9 | Pivot Table                    | `episodes/ep09-pivot-tables`                       | การ reshape ข้อมูลเพื่อทำรายงาน                        |
+|  EP9 | [Pivot Table](episodes/ep09-pivot-tables/README.md)                    | [`episodes/ep09-pivot-tables`](episodes/ep09-pivot-tables/README.md)                       | การ reshape ข้อมูลเพื่อทำรายงาน                        |
 | EP10 | การจัดการข้อความ               | `episodes/ep10-vectorized-string-operations`       | ทำความสะอาด text เช่น device ID                        |
 | EP11 | Time Series                    | `episodes/ep11-working-with-time-series`           | DateTime, resampling, rolling                          |
 | EP12 | เพิ่มประสิทธิภาพ Pandas        | `episodes/ep12-high-performance-pandas-eval-query` | eval(), query()                                        |
