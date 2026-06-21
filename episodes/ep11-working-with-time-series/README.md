@@ -71,8 +71,6 @@ print(t)
 ข้อมูลจาก CSV หรือ Database มักเป็น string ก่อน ต้องแปลงเป็น datetime
 
 ```py
-import pandas as pd
-
 df = pd.DataFrame({
     "timestamp": [
         "2026-01-01 08:00:00",
@@ -370,18 +368,31 @@ coldroom["temp_rolling_3h"] = (
 print(coldroom[["temperature_c", "temp_rolling_3h"]].head(10))
 ```
 
-ใช้ลด Noise ของ Sensor
+ใช้ลด Noise ของ Sensor เมื่อเป็น กราฟจริงจะอ่านแนวโน้มยาก ซึ่ง Rolling Mean จะช่วย **ทำให้เรียบ** จึงนิยมใช้ก่อนที่จะดำเนินการต่างๆเหล่านี้
+- Anomaly Detection
+- Forecasting
+- Trend Analysis
+- Dashboard
+- Machine Learning
 
 ---
 
 # 18. Rolling 24 ชั่วโมง
 
-```python
-coldroom["temp_rolling_24h"] = (
-    coldroom["temperature_c"]
-    .rolling(24)
-    .mean()
-)
+```py
+import matplotlib.pyplot as plt
+```
+
+```py
+coldroom["temperature_c"].plot(label="Raw")
+
+coldroom["temperature_c"] \
+    .rolling(24) \
+    .mean() \
+    .plot(label="Rolling Mean")
+
+plt.legend()
+plt.show()
 ```
 
 เหมาะกับการดูแนวโน้มรายวัน
@@ -450,12 +461,10 @@ print(duration)
 แต่เวลาที่ผู้ใช้งานในไทยต้องการดูคือ Asia/Bangkok
 
 ```text
-UTC
-↓
-Asia/Bangkok
+UTC -> Asia/Bangkok
 ```
 
-ประเทศไทยอยู่โซนเวลา UTC+7
+ประเทศไทยอยู่โซนเวลา `UTC+7`
 
 ---
 
