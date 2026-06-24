@@ -77,6 +77,7 @@ source .venv/bin/activate
 pip install pandas numpy matplotlib jupyter
 ```
 
+
 ---
 
 ## โครงสร้างโปรเจกต์

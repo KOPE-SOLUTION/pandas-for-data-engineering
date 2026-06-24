@@ -794,6 +794,7 @@ flowchart LR
 
 # 48. ตอนถัดไป
 
+
 `EP13 — Further Resources`
 
 หัวข้อที่ควรต่อยอด:
