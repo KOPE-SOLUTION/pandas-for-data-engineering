@@ -1,0 +1,5 @@
+room_id,temperature_c,door_open,compressor_running
+room_a,4.1,False,True
+room_a,8.5,True,True
+room_b,3.8,False,True
+room_b,9.2,True,False

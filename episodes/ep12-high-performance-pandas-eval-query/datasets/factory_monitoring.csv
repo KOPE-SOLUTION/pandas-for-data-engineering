@@ -1,0 +1,6 @@
+machine_id,line,temperature_c,vibration_mm_s,power_kw,status
+M01,line_1,32.5,1.2,12.5,running
+M02,line_1,28.2,0.8,8.2,idle
+M03,line_2,35.1,2.5,15.4,running
+M04,line_2,30.8,1.0,10.1,running
+M05,line_3,33.9,1.8,13.2,alarm
